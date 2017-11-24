@@ -1,17 +1,82 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      Home
+    </ion-title>
   </ion-navbar>
 </ion-header>
+<ion-content padding id="page2">
+  <form id="home-form2">
+    <ion-item-divider color="light" id="home-list-item-divider1">
+      Cocina
+    </ion-item-divider>
+    <ion-item id="home-toggle3">
+      <ion-label>
+        Luz 1
+      </ion-label>
+      <ion-toggle color="positive" checked="false" (ionChange)="notify($event)"></ion-toggle>
+    </ion-item>
+    <ion-item id="home-toggle4">
+      <ion-label>
+        Luz 2
+      </ion-label>
+      <ion-toggle color="positive" checked="false" (ionChange)="notify2($event)" ></ion-toggle>
+    </ion-item>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+    <ion-item-divider color="light" id="home-list-item-divider2">
+      Sala
+    </ion-item-divider>
+    <ion-item id="home-toggle5">
+      <ion-label>
+        Luz 1
+      </ion-label>
+      <ion-toggle color="positive" checked="false" (ionChange)="notify3($event)"></ion-toggle>
+    </ion-item>
+    <ion-item id="home-toggle8">
+      <ion-label>
+        Television
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item-divider color="light" id="home-list-item-divider3">
+      Cuartos
+    </ion-item-divider>
+    <ion-item id="home-toggle6">
+      <ion-label>
+        Cuarto 1
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item id="home-toggle7">
+      <ion-label>
+        Cuarto 2
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item-divider color="light" id="home-list-item-divider4">
+      Baños
+    </ion-item-divider>
+    <ion-item id="home-toggle9">
+      <ion-label>
+        Baño 1
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item id="home-toggle10">
+      <ion-label>
+        Baño 2
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item-divider color="light" id="home-list-item-divider5">
+      Garaje
+    </ion-item-divider>
+    <ion-item id="home-toggle11">
+      <ion-label>
+        Luz 1
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+  </form>
 </ion-content>
